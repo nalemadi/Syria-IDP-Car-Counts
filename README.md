@@ -15,7 +15,7 @@ Reliable data on human mobility is critical for understanding population displac
 
 ## Dataset
 
-Available for download on [**Zenodo repository**](https://zenodo.org/records/20643798)
+Syria-IDP-Car-Counts dataset is vailable for download on [**Zenodo repository**](https://doi.org/10.5281/zenodo.20643798)
 
 
 >[!NOTE]
