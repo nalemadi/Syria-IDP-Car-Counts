@@ -33,13 +33,14 @@ This repository covers the trend-generation pipeline and all statistical robustn
 ```
 ├── README.md
 ├── trend_analysis_pipeline/
-│   └── IDP_CarCount_trend_pipeline.py
-└── correlation_robustness/
+   └── IDP_CarCount_trend_pipeline.py
+```
+<!-- └── correlation_robustness/
     ├── clustering_robustness_analysis.py
     ├── city_size_confound_analysis.py
     ├── detector_uncertainty_analysis.py
     └── significance_diagnostics_analysis.py
-```
+-->
 
 ## `trend_analysis_pipeline/`
 
@@ -49,7 +50,7 @@ This repository covers the trend-generation pipeline and all statistical robustn
 
 **Usage**: `python IDP_CarCount_trend_pipeline.py --inp <idp_reports.tsv> --outdir <output_directory>`
 
-## `correlation_robustness/`
+<!-- ## `correlation_robustness/`
 
 Scripts supporting the robustness analyses added to the Results section, addressing the points where reviewer follow-up identified the most significant risk to the paper's central claims.
 
@@ -59,6 +60,7 @@ Scripts supporting the robustness analyses added to the Results section, address
 | `city_size_confound_analysis.py` | Partial correlations controlling for baseline population and baseline car population, and the corresponding multiple regression — rules out city size as the primary driver of the observed association. |
 | `detector_uncertainty_analysis.py` | Analytical and empirical demonstration that a uniform detector-uncertainty correction leaves Pearson's r and directional concordance unchanged; precision/recall attenuation-bias discussion distinguishing the two error sources' effects. |
 | `significance_diagnostics_analysis.py` | Spearman's rank correlation as a robustness check, and Cook's distance diagnostics identifying influential observations — surfaced the sensitivity of the primary correlation to a small number of high-magnitude reports. |
+-->
 
 ## Requirements
 
