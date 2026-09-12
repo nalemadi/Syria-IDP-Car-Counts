@@ -1577,7 +1577,7 @@ if __name__ == "__main__":
     directory_path = Path(ou_dir)
     directory_path.mkdir(parents=True, exist_ok=True)
 
-    car_pop_baseline_files = '/export/sc2/nalemadi/Projects/IDP_SYR/grids_output_worldpopbased/100m/prewar_baseline_cars_count_grids/'
+    car_pop_baseline_files = 'IDP_SYR/grids_output_worldpopbased/100m/prewar_baseline_cars_count_grids/'
     all_entries = os.listdir(car_pop_baseline_files)
     all_entries.sort()
 
