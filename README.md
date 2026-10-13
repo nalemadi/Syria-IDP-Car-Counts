@@ -33,8 +33,11 @@ This repository covers the trend-generation pipeline and all statistical robustn
 ```
 ├── README.md
 ├── trend_analysis_pipeline/
-   └── IDP_CarCount_trend_pipeline.py
+│   └── IDP_CarCount_trend_pipeline.py
+└── partial_coverage_correction/
+    └── partial_coverage_correction.py
 ```
+
 <!-- └── correlation_robustness/
     ├── clustering_robustness_analysis.py
     ├── city_size_confound_analysis.py
@@ -61,6 +64,13 @@ Scripts supporting the robustness analyses added to the Results section, address
 | `detector_uncertainty_analysis.py` | Analytical and empirical demonstration that a uniform detector-uncertainty correction leaves Pearson's r and directional concordance unchanged; precision/recall attenuation-bias discussion distinguishing the two error sources' effects. |
 | `significance_diagnostics_analysis.py` | Spearman's rank correlation as a robustness check, and Cook's distance diagnostics identifying influential observations — surfaced the sensitivity of the primary correlation to a small number of high-magnitude reports. |
 -->
+
+## `partial_coverage_correction/`
+
+| Script | Description |
+|---|---|
+| `partial_coverage_correction.py` | Applies the correction to partially covered images: splits the pre-war baseline car grid into covered / uncovered parts using the image seamline polygons, computes the coverage fraction c and ratio r, and returns the corrected total with beta. Images with 100% coverage are left uncorrected. |
+
 
 ## Requirements
 
